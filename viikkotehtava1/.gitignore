@@ -59,7 +59,8 @@ CMakeLists.txt.user*
 *.opensdf
 *.vcxproj
 *vcxproj.*
-
+#ignore build directories
+build/
 # MinGW generated files
 *.Debug
 *.Release
