@@ -18,11 +18,7 @@ Game::Game(int maksimi) {
 
 Game::~Game()
 {
-    cout << "tuhotaan bjekti";
-    delete Game::maxNumber;
-    delete Game::playerGuess;
-    delete Game::randomNumber;
-    delete Game::numOfGuessas;
+
 }
 
 void Game::play()
