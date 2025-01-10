@@ -5,19 +5,17 @@
 
 using namespace std;
 int game(int maximum);
+
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
     srand(static_cast<unsigned int>(std::time(0)));
+
     int maksimi;
     cout << "Syota maksimi luku " << endl;
-
     cin >> maksimi;
-    cout << "arvasit " << game(maksimi) << " kertaa";
+    int arvausmaara = game(maksimi);
+    cout << "arvasit " << arvausmaara << " kertaa";
 
-
-
-    return a.exec();
 }
 int game(int maximum){
 
