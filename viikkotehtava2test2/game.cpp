@@ -3,13 +3,9 @@
 #include <ctime>
 #include <iostream>
 using namespace std;
-void Game::printGameResult()
-{
-    cout << "oikein! luku on " << Game::randomNumber<<endl;
-
-}
 
 Game::Game(int maksimi) {
+
     srand(static_cast<unsigned int>(std::time(0)));
     Game::numOfGuesses=0;
     Game::randomNumber = rand()% maksimi;
@@ -19,6 +15,11 @@ Game::Game(int maksimi) {
 Game::~Game()
 {
 
+}
+
+void Game::printGameResult()
+{
+    cout << "oikein! luku on " << this->randomNumber<<endl;
 }
 
 void Game::play()
@@ -36,7 +37,6 @@ void Game::play()
         }
         else if(Game::playerGuess <Game::randomNumber){
             cout << "luku on suurempi" << endl;
-
         }
         Game::numOfGuesses++;
     }
