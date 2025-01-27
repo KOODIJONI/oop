@@ -15,6 +15,7 @@ bool ItalianChef::askSecret(string sercetPassword, int ingredient1, int ingredie
 {
 
     if(this->password.compare(sercetPassword)==0){
+
         this->makepizza(ingredient1,ingredient2);
         return true;
     }
@@ -28,7 +29,7 @@ int ItalianChef::makepizza(int ingredient1, int ingredient2)
     if(ingredient1>4&&ingredient2>4){
         const int minimum = min(ingredient1,ingredient1);
         int count = minimum / 5;
-        cout << count << " Pizzaa luotu " << ingredient1 << " jauholla ja " << ingredient2 << " vedella "<<endl;
+        cout << count << " pizzas created using " << ingredient1 << "kg flour and " << ingredient2 << "l water "<<endl;
         return count;
     }else{
         cout << "no ingredients";

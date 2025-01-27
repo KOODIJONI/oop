@@ -19,7 +19,7 @@ string Chef::getName()
 int Chef::makeSalad(int ingredient)
 {
     int count = ingredient / 5;
-    if(count < 0){
+    if(count < 1){
         cout << "No enough ingredients" << endl;
         return 0;
 
@@ -32,7 +32,7 @@ int Chef::makeSalad(int ingredient)
 int Chef::makeSoup(int ingredient)
 {
     int count = ingredient / 3;
-    if(count < 0){
+    if(count < 1){
         cout << "No enough ingredients" << endl;
         return 0;
     }
