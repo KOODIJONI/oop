@@ -4,7 +4,6 @@ Luottotili::Luottotili(string omistaja,double luottoraja): Pankkitili(omistaja) 
     this->luottoRaja = luottoraja;
     cout << "tilin tyyppi: luottotili " <<endl << "Luottoraja: "<< this->luottoRaja <<endl<< endl;
 
-
 }
 bool Luottotili::deposit(double amount)
 {

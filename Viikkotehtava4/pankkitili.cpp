@@ -16,7 +16,7 @@ double Pankkitili::getBalance()
 
 bool Pankkitili::deposit(double amount)
 {
-    if(amount>0&&amount<10000){
+    if(amount>this->saldo&&amount<10000){
         this->saldo=this->saldo+amount;
         cout << "Talletettu  " <<amount <<" e" << " kayttajalle " << this->omistaja<<endl;
         return true;

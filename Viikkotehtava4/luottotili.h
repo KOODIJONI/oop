@@ -6,8 +6,8 @@ class Luottotili: public Pankkitili
 {
 public:
     Luottotili(string,double);
-    bool deposit(double) override;
-    bool withdraw(double) override;
+    virtual bool deposit(double) override;
+    virtual bool withdraw(double) override;
 protected:
     double luottoRaja = 0;
 };
