@@ -73,7 +73,6 @@ int main ()
             cin >> search;
             cout << endl;
             std::vector<Student> foundStudents;
-
             std::copy_if (studentList.begin(), studentList.end(),back_inserter(foundStudents),[search](auto& student) { // Capture 'search' by value
                     return search == student.getName();
 
